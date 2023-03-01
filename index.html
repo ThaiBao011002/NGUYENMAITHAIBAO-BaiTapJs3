@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Mảng</title>
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col pt-5">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="Number" placeholder="Nhập số n">
+                </div>
+            </div>
+            <div class="col pt-5">
+                <div class="form-group">
+                    <button id="addnumber" tyle="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group pt-3" style="background-color: aliceblue;">
+       Số n :<span id="Array"></span>
+        </div>
+            <div id="accordion" class="pt-5">
+<!-- Bài 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Tổng số dương
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="addscore" tyle="button" class="btn btn-primary">Tính Tổng</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Tổng số dương :<span id="NumberPositive"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 2                 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Đếm số dương
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="CountNumberPositive" tyle="button" class="btn btn-primary">Đếm số</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Các số dương :<span id="CountNumber"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Tìm số nhỏ nhất
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="FindNumberMin" tyle="button" class="btn btn-primary">Tìm số nhỏ nhất</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Số nhỏ nhất :<span id="NumberMin"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 4 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Tìm số dương nhỏ nhất
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="FindNumberPositiveMin" tyle="button" class="btn btn-primary">Tìm số dương nhỏ nhất</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    số dương nhỏ nhất :<span id="NumberPositiveMin"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 5 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Tìm số chẵn cuối cùng
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="NumberEven" tyle="button" class="btn btn-primary">Tìm số chẵn</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Số chẵn cuối cùng :<span id="NumberEvenLast"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 6 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Đổi chỗ
+                        </a>
+                    </div>
+                    <div id="" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="Location1" placeholder="Nhập vị trí thứ nhất">
+                                      </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="Location2" placeholder="Nhập vị trí thứ hai">
+                                      </div>
+                                </div>
+                                </div>
+                            <div>
+                                <button id="ChangePlaces" tyle="button" class="btn btn-primary">Đổi chỗ</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Sau khi hoán đổi :<span id="LastChange"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 7 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Sắp xếp số
+                        </a>
+                    </div>
+                    <div id="Arrange" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="Arrange_Btn" tyle="button" class="btn btn-primary">Sắp xếp</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Sau khi sắp xếp :<span id="LastArrange"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 8 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Tiềm số nguyên tố đầu tiên
+                        </a>
+                    </div>
+                    <div id="FindNumberPrime" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="FindNumberPrime" tyle="button" class="btn btn-primary">Tìm số nguyên tố</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Số nguyên tố đầu tiên :<span id="FirstNumberPrime"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Bài 9 -->
+                <div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            Đếm số dương
+        </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+            <div>
+                <button id="CountNumberPositive" tyle="button" class="btn btn-primary">Đếm số</button>
+            </div>
+            <div class="pt-5">
+                <div class="pt-3" style="background-color: lightblue;">
+                    Các số dương :<span id="CountNumber"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+<!-- Bài 10 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Đếm số dương
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div>
+                                <button id="CountNumberPositive" tyle="button" class="btn btn-primary">Đếm số</button>
+                            </div>
+                            <div class="pt-5">
+                                <div class="pt-3" style="background-color: lightblue;">
+                                    Các số dương :<span id="CountNumber"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="./js/Main.js"></script>
+
+</body>
+
+</html>
