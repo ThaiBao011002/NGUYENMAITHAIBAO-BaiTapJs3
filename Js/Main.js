@@ -80,16 +80,24 @@ document.getElementById("NumberEven").onclick = function FindNumberEvenLast (){
 // Hoán đổi
 document.getElementById("ChangePlaces").onclick = function Change (){
     var Places1 = document.getElementById("Location1").value;
-    var Places2 = document.getElementById("Location2").value;
+    var Places2 = document.getElementById("Location2").value; 
     var value1 = 0;
+    var Num = NumArray[0];
     var value2 = 0;
+    var temp = 0;
 
     value1 = NumArray[Places1];
     value2 = NumArray[Places2];
-
-    [value1, value2] = [value2, value1];
-    // document.getElementById("LastChange").innerHTML = NumArray;
+    temp = value1;
+    value1 = value2;
+    value2 = temp;
+    for (var i = 0; i < NumArray.length; i++) {
+        Num = NumArray;
+    }
+    document.getElementById("LastChange").innerHTML = Num;
+      
 }
+
 
 // Sắp xếp số
 
@@ -163,10 +171,8 @@ document.getElementById("Compare").onclick = function CompareNumber (){
      for (var i = 0; i < NumArray.length; i++) {
         if (NumArray[i] > 0){
             number1.push(NumArray[i]);
-            console.log(number1);  
         } else {
             number2.push(NumArray[i]);
-            console.log(number2);
         }
        
      }

@@ -210,17 +210,36 @@
                 <div class="card">
     <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            Đếm số dương
+            Tổng số dương
         </a>
     </div>
     <div id="collapseOne" class="collapse show" data-parent="#accordion">
         <div class="card-body">
+            <div class="row">
+                <div class="col pt-5">
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="NumberInt" placeholder="Nhập số n">
+                    </div>
+                </div>
+                <div class="col pt-5">
+                    <div class="form-group">
+                        <button id="addnumberint" tyle="button" class="btn btn-primary">Add Number</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group pt-3" style="background-color: aliceblue;">
+           Số n :<span id="ArrayInt"></span>
+            </div>
+            
+            
+            
+            
             <div>
-                <button id="CountNumberPositive" tyle="button" class="btn btn-primary">Đếm số</button>
+                <button id="CountNumberIntBtn" tyle="button" class="btn btn-primary">Đếm số nguyên</button>
             </div>
             <div class="pt-5">
                 <div class="pt-3" style="background-color: lightblue;">
-                    Các số dương :<span id="CountNumber"></span>
+                    Số nguyên :<span id="CountNumberInt"></span>
                 </div>
             </div>
         </div>
@@ -228,32 +247,24 @@
                 </div>
 <!-- Bài 10 -->
                 <div class="card">
-                    <div class="card-header">
-                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                            Đếm số dương
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                        <div class="card-body">
-                            <div>
-                                <button id="CountNumberPositive" tyle="button" class="btn btn-primary">Đếm số</button>
-                            </div>
-                            <div class="pt-5">
-                                <div class="pt-3" style="background-color: lightblue;">
-                                    Các số dương :<span id="CountNumber"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            So sánh số âm và dương
+        </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+            <div>
+                <button id="Compare" tyle="button" class="btn btn-primary">So sánh</button>
+            </div>
+            <div class="pt-5">
+                <div class="pt-3" style="background-color: lightblue;">
+                    Các số dương :<span id="ComparisonResults"></span>
                 </div>
-                
-
-            
             </div>
         </div>
-
-
-
+    </div>
+                </div>
 
 
 
